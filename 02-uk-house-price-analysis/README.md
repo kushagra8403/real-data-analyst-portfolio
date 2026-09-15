@@ -1,36 +1,39 @@
-# UK House Price & Affordability Analytics
+# UK House Price Analysis
 
-Real-world Data Analyst project using HM Land Registry's UK House Price Index.
+## Real data, code and visual evidence
 
-## Business question
-How are UK house prices changing across countries and English regions, and where is price growth diverging from the national trend?
+This project uses the **HM Land Registry UK House Price Index**.
 
-## Source
-HM Land Registry — UK House Price Index. June 2026 is the latest release used for the portfolio snapshot. [Official source](https://www.gov.uk/government/statistics/uk-house-price-index-for-june-2026)
-
-## Verified June 2026 facts
+### Headline facts — June 2026
 - UK average property price: **£272,000**
-- UK annual price change: **+2.0%**
-- UK monthly price change: **+0.1%**
-- England average: **£293,000**, annual change **+1.8%**
+- Annual change: **+2.0%**
+- Monthly change: **+0.1%**
+- England average: **£293,000**
 - North West annual growth: **+4.7%**
-- London annual change: **-2.5%**
+- London annual change: **−2.5%**
 
-## Analysis
-- Regional price growth
-- Country comparison
-- Monthly vs annual change
-- Property-type analysis
-- Long-run price index trend
-- Regional variance and outlier detection
+### Visual
 
-## Reproducibility
+<img src="https://raw.githubusercontent.com/kushagra8403/real-data-analyst-portfolio/main/02-uk-house-price-analysis/visuals/published_metrics.svg" alt="UK house price published metrics" width="900">
+
+### Open the actual project files
+- [Real-data evidence table](./data/featured_metrics.csv)
+- [Analytical output](./output/summary_metrics.csv)
+- [Python analysis](./src/analyze.py)
+- [Data download script](./src/download_data.py)
+- [Output/visual builder](./src/build_outputs.py)
+- [SQL analysis](./sql/analysis.sql)
+- [Advanced SQL](./sql/advanced_analysis.sql)
+- [Dashboard visual](./visuals/dashboard.svg)
+- [Published-metrics visual](./visuals/published_metrics.svg)
+
+### Source
+[HM Land Registry — UK House Price Index](https://www.gov.uk/government/statistics/uk-house-price-index-for-june-2026)
+
+### Reproduce
 ```bash
 pip install -r requirements.txt
 python src/download_data.py
 python src/analyze.py
+python src/build_outputs.py
 ```
-
-## Dashboard preview
-
-![Dashboard preview](./visuals/dashboard.svg)
