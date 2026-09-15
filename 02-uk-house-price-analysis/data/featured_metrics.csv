@@ -1,0 +1,7 @@
+period,metric,value,source_url
+2026-06,UK average price,272188,https://landregistry.data.gov.uk/app/ukhpi/
+2026-06,UK annual change %,2.0,https://landregistry.data.gov.uk/app/ukhpi/
+2026-06,UK monthly change %,0.1,https://landregistry.data.gov.uk/app/ukhpi/
+2026-06,England average price,293000,https://landregistry.data.gov.uk/app/ukhpi/
+2026-06,North West annual change %,4.7,https://landregistry.data.gov.uk/app/ukhpi/
+2026-06,London annual change %,-2.5,https://landregistry.data.gov.uk/app/ukhpi/
