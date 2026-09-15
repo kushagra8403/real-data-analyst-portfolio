@@ -1,0 +1,6 @@
+metric,value,unit,period,source
+Renewable generation,152.5,TWh,2025,https://www.gov.uk/government/statistics/electricity-section-5-energy-trends
+Renewable share,52.5,percent,2025,https://www.gov.uk/government/statistics/electricity-section-5-energy-trends
+Wind generation,87.1,TWh,2025,https://www.gov.uk/government/statistics/electricity-section-5-energy-trends
+Solar generation,20,TWh,2025,https://www.gov.uk/government/statistics/electricity-section-5-energy-trends
+Low-carbon MPP share,64.8,percent,2025,https://www.gov.uk/government/statistics/electricity-section-5-energy-trends
