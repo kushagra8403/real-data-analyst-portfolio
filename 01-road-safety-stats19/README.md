@@ -1,41 +1,37 @@
 # Road Safety Analytics — STATS19
 
-Real-world UK Data Analyst project using the Department for Transport's STATS19 road casualty data.
+## Real data, code and visual evidence
 
-## Business question
-Where, when and under what conditions are serious road casualties concentrated, and how does risk vary by road type, speed limit, urban/rural setting and geography?
+This project uses the **Department for Transport STATS19** road-safety dataset.
 
-## Source
-Department for Transport — Road Safety Open Data. The latest final validated full year is 2025. The source contains record-level collision, vehicle and casualty files for Great Britain. [Official source](https://www.gov.uk/government/statistical-data-sets/road-safety-open-data)
-
-## Verified headline facts from the 2025 final release
-- **1,538 fatalities**
+### Headline facts
+- **1,538 fatalities** in 2025
 - **29,918 killed or seriously injured (KSI) casualties**
-- **127,883 casualties of all severities**
-- Fatalities were **4% lower** than 2024, while KSI casualties were **4% higher**.
+- **127,883 casualties** of all severities
+- Fatalities **4% lower** than 2024; KSI casualties **4% higher**
 
-These are official published figures; the project analysis script downloads the underlying collision CSV and calculates additional breakdowns locally.
+### Visual
 
-## Tools
-Python • pandas • SQL/SQLite • Matplotlib • Power BI-ready outputs
+<img src="https://raw.githubusercontent.com/kushagra8403/real-data-analyst-portfolio/main/01-road-safety-stats19/visuals/published_metrics.svg" alt="DfT STATS19 published metrics dashboard" width="900">
 
-## Analysis
-- Severity and casualty trends
-- Urban vs rural comparison
-- Road class and speed-limit analysis
-- Month/day/time patterns
-- Police-force/geographic comparison
-- Serious-casualty concentration
+### Open the actual project files
+- [Real-data evidence table](./data/featured_metrics.csv)
+- [Analytical output](./output/summary_metrics.csv)
+- [Python analysis](./src/analyze.py)
+- [Data download script](./src/download_data.py)
+- [Output/visual builder](./src/build_outputs.py)
+- [SQL analysis](./sql/analysis.sql)
+- [Advanced SQL](./sql/advanced_analysis.sql)
+- [Dashboard visual](./visuals/dashboard.svg)
+- [Published-metrics visual](./visuals/published_metrics.svg)
 
-## Reproducibility
+### Source
+[Department for Transport — Road Safety Open Data](https://www.gov.uk/government/statistical-data-sets/road-safety-open-data)
+
+### Reproduce
 ```bash
 pip install -r requirements.txt
 python src/download_data.py
 python src/analyze.py
+python src/build_outputs.py
 ```
-
-The raw 2025 CSV is deliberately not committed because the official file is ~19 MB. The script downloads it directly from DfT.
-
-## Dashboard preview
-
-![Dashboard preview](./visuals/dashboard.svg)
