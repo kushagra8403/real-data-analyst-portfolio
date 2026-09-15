@@ -1,0 +1,6 @@
+metric,value,unit,period,source
+"Fatalities",1538,count,"2025","https://www.gov.uk/government/statistical-data-sets/road-safety-open-data"
+"KSI casualties",29918,count,"2025","https://www.gov.uk/government/statistical-data-sets/road-safety-open-data"
+"All casualties",127883,count,"2025","https://www.gov.uk/government/statistical-data-sets/road-safety-open-data"
+"Fatalities YoY",-4.0,percent,"2025","https://www.gov.uk/government/statistical-data-sets/road-safety-open-data"
+"KSI YoY",4.0,percent,"2025","https://www.gov.uk/government/statistical-data-sets/road-safety-open-data"
