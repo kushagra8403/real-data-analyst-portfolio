@@ -1,33 +1,37 @@
-# NHS A&E Demand & Performance
+# NHS A&E Performance Analysis
 
-Real-world Data Analyst project using NHS England monthly A&E activity data.
+## Real data, code and visual evidence
 
-## Business question
-How is emergency demand changing, and how does provider performance compare against activity volumes?
+This project uses **NHS England A&E Attendances and Emergency Admissions** data.
 
-## Source
-NHS England — A&E Attendances and Emergency Admissions 2026-27. [Official source](https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/ae-attendances-and-emergency-admissions-2026-27/)
-
-## Verified summer 2026 facts
-- **7,268,445** A&E attendances across June–August 2026
+### Headline facts — June to August 2026
+- **7,268,445** A&E attendances
 - **5,462,182** within-four-hours activity
 - **2,455,833** ambulance call-outs
-- Summer 2026 attendances were more than **240,000 higher** than the comparable 2025 period.
+- Attendances were more than **240,000 higher** than the comparable 2025 period
 
-## Analysis
-- Monthly A&E demand
-- Four-hour performance
-- Emergency admissions
-- Provider volume/performance comparison
-- High-volume provider analysis
+### Visual
 
-## Reproducibility
+<img src="https://raw.githubusercontent.com/kushagra8403/real-data-analyst-portfolio/main/04-nhs-ae-performance/visuals/published_metrics.svg" alt="NHS A&E published metrics" width="900">
+
+### Open the actual project files
+- [Real-data evidence table](./data/featured_metrics.csv)
+- [Analytical output](./output/summary_metrics.csv)
+- [Python analysis](./src/analyze.py)
+- [Data download script](./src/download_data.py)
+- [Output/visual builder](./src/build_outputs.py)
+- [SQL analysis](./sql/analysis.sql)
+- [Advanced SQL](./sql/advanced_analysis.sql)
+- [Dashboard visual](./visuals/dashboard.svg)
+- [Published-metrics visual](./visuals/published_metrics.svg)
+
+### Source
+[NHS England — A&E Attendances and Emergency Admissions](https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/)
+
+### Reproduce
 ```bash
 pip install -r requirements.txt
 python src/download_data.py
 python src/analyze.py
+python src/build_outputs.py
 ```
-
-## Dashboard preview
-
-![Dashboard preview](./visuals/dashboard.svg)
