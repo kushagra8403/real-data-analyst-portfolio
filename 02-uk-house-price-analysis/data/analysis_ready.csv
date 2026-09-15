@@ -1,0 +1,7 @@
+metric,value,unit,period,source
+"UK average price",272188,GBP,"June 2026","https://www.gov.uk/government/statistics/uk-house-price-index-for-june-2026"
+"UK annual change",2.0,percent,"June 2026","https://www.gov.uk/government/statistics/uk-house-price-index-for-june-2026"
+"UK monthly change",0.1,percent,"June 2026","https://www.gov.uk/government/statistics/uk-house-price-index-for-june-2026"
+"England average price",293000,GBP,"June 2026","https://www.gov.uk/government/statistics/uk-house-price-index-for-june-2026"
+"North West annual growth",4.7,percent,"June 2026","https://www.gov.uk/government/statistics/uk-house-price-index-for-june-2026"
+"London annual change",-2.5,percent,"June 2026","https://www.gov.uk/government/statistics/uk-house-price-index-for-june-2026"
