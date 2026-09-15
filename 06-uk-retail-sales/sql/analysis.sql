@@ -1,10 +1,2 @@
--- Load cleaned ONS DRSI series into SQLite as retail_sales.
-SELECT period, series, value
-FROM retail_sales
-WHERE period >= '2025'
-ORDER BY period DESC;
-
-SELECT period, AVG(value) AS average_index
-FROM retail_sales
-GROUP BY period
-ORDER BY period DESC;
+SELECT metric,value,unit,period FROM analysis_ready ORDER BY metric;
+SELECT unit,COUNT(*) metric_count,MIN(value) min_value,MAX(value) max_value FROM analysis_ready GROUP BY unit;
