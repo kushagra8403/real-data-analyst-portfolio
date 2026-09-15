@@ -1,6 +1,6 @@
-period,metric,value
-2025,Fatalities,1538
-2025,Killed or seriously injured,29918
-2025,All casualties,127883
-2025,Fatalities YoY change %,-4.0
-2025,KSI YoY change %,4.0
+metric,value,unit,period
+"Fatalities",1538,count,"2025"
+"KSI casualties",29918,count,"2025"
+"All casualties",127883,count,"2025"
+"Fatalities YoY",-4.0,percent,"2025"
+"KSI YoY",4.0,percent,"2025"
