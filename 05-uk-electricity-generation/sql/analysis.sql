@@ -1,12 +1,3 @@
--- Load cleaned electricity table into SQLite as electricity.
-SELECT period, fuel, SUM(generation_twh) AS generation_twh
-FROM electricity
-GROUP BY period, fuel
-ORDER BY period DESC, generation_twh DESC;
-
-SELECT period,
-       SUM(CASE WHEN fuel IN ('Wind','Solar','Hydro','Bioenergy') THEN generation_twh ELSE 0 END)
-       / SUM(generation_twh) * 100 AS renewable_share_pct
-FROM electricity
-GROUP BY period
-ORDER BY period;
+-- Load analysis_ready.csv as analysis_ready in SQLite.
+SELECT metric,value,unit,period FROM analysis_ready ORDER BY metric;
+SELECT unit,COUNT(*) AS metric_count,MIN(value) AS min_value,MAX(value) AS max_value FROM analysis_ready GROUP BY unit;
