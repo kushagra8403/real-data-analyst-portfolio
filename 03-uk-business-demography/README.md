@@ -1,36 +1,39 @@
-# UK Business Births, Closures & Survival
+# UK Business Demography Analysis
 
-Real-world ONS Data Analyst project using the Inter-Departmental Business Register (IDBR).
+## Real data, code and visual evidence
 
-## Business question
-Where are businesses being created and closed, and how do these patterns vary by industry and geography?
+This project uses **Office for National Statistics Business Demography** data.
 
-## Source
-Office for National Statistics — Business demography, quarterly UK. [Official source](https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyquarterlyexperimentalstatisticsuk)
-
-## Verified Q2 2026 facts
+### Headline facts — Q2 2026
 - **79,325** business creations
 - **76,840** business closures
-- Creations were **2.2% higher** than Q2 2025
-- Closures were **2.0% higher** than Q2 2025
+- Creations **+2.2%** YoY
+- Closures **+2.0%** YoY
 - Creations increased in **9 of 16** main industrial groups
-- Closures increased in **11 of 16** groups
+- Closures increased in **11 of 16**
 
-## Analysis
-- Net business creation
-- Industry birth/death rates
-- Regional patterns
-- Quarterly trends
-- Survival analysis using the annual ONS dataset
-- Industry concentration and change
+### Visual
 
-## Reproducibility
+<img src="https://raw.githubusercontent.com/kushagra8403/real-data-analyst-portfolio/main/03-uk-business-demography/visuals/published_metrics.svg" alt="ONS business demography published metrics" width="900">
+
+### Open the actual project files
+- [Real-data evidence table](./data/featured_metrics.csv)
+- [Analytical output](./output/summary_metrics.csv)
+- [Python analysis](./src/analyze.py)
+- [Data download script](./src/download_data.py)
+- [Output/visual builder](./src/build_outputs.py)
+- [SQL analysis](./sql/analysis.sql)
+- [Advanced SQL](./sql/advanced_analysis.sql)
+- [Dashboard visual](./visuals/dashboard.svg)
+- [Published-metrics visual](./visuals/published_metrics.svg)
+
+### Source
+[ONS — Business demography, quarterly UK](https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyquarterlyexperimentalstatisticsuk)
+
+### Reproduce
 ```bash
 pip install -r requirements.txt
 python src/download_data.py
 python src/analyze.py
+python src/build_outputs.py
 ```
-
-## Dashboard preview
-
-![Dashboard preview](./visuals/dashboard.svg)
