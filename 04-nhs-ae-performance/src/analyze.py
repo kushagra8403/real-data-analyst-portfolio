@@ -1,6 +1,5 @@
 import pandas as pd
 from pathlib import Path
-p=Path(__file__).parents[1]/"data/analysis_ready.csv"
-df=pd.read_csv(p)
+df=pd.read_csv(Path(__file__).parents[1]/"data/analysis_ready.csv")
+assert not df.empty and df.value.notna().all()
 print(df.to_string(index=False))
-print("\nOfficial source:",df.source.iloc[0])
