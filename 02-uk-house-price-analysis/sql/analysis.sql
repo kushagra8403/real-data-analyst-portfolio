@@ -1,15 +1,10 @@
--- Load data/uk_hpi.csv into SQLite as hpi.
-SELECT region_name, AVG(average_price) AS avg_price
-FROM hpi
-GROUP BY region_name
-ORDER BY avg_price DESC;
+-- UK House Prices: repeatable analysis over the committed published evidence table
+SELECT metric, value, unit, period
+FROM analysis_ready
+ORDER BY metric;
 
-SELECT region_name, AVG(annual_change) AS avg_annual_change
-FROM hpi
-GROUP BY region_name
-ORDER BY avg_annual_change DESC;
-
-SELECT date, AVG(average_price) AS uk_average_price
-FROM hpi
-GROUP BY date
-ORDER BY date DESC;
+-- Numeric KPIs
+SELECT unit, COUNT(*) AS metrics, MIN(value) AS min_value, MAX(value) AS max_value
+FROM analysis_ready
+GROUP BY unit
+ORDER BY unit;
