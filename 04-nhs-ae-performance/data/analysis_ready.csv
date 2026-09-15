@@ -1,0 +1,5 @@
+metric,value,unit,period,source
+A&E attendances,7268445,count,June-August 2026,https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/
+Within-four-hours activity,5462182,count,June-August 2026,https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/
+Ambulance call-outs,2455833,count,June-August 2026,https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/
+Year-on-year attendance increase,240000,count,June-August 2026,https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/
