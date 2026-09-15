@@ -1,35 +1,38 @@
-# Great Britain Retail Sales Analytics
+# UK Retail Sales Analysis
 
-Real-world ONS Data Analyst project using the Retail Sales Index.
+## Real data, code and visual evidence
 
-## Business question
-What is happening to retail demand, and how do online and physical retail channels differ over time?
+This project uses the **ONS Retail Sales Index**.
 
-## Source
-Office for National Statistics — Retail Sales Index. The July 2026 release is used as the current portfolio snapshot. [Official dataset](https://www.ons.gov.uk/businessindustryandtrade/retailindustry/datasets/retailsales)
+### Headline facts — July 2026
+- Retail sales volumes **−0.5% MoM**
+- Volumes **+1.6% YoY**
+- Three-month change: **+1.1%**
+- Online spending values **+6.5% YoY**
+- Online sales share: **28.3%**
 
-## Verified July 2026 facts
-- Retail sales volumes fell **0.5%** month-on-month.
-- Volumes rose **1.6%** compared with July 2025.
-- Volumes rose **1.1%** in the three months to July 2026 compared with the three months to April.
-- Online spending values were **6.5% higher** than July 2025.
-- Online sales represented **28.3%** of total sales in July 2026.
+### Visual
 
-## Analysis
-- Retail volume/value trends
-- Online vs total sales
-- Sector performance
-- Monthly and rolling-three-month growth
-- Year-on-year comparisons
-- Seasonal volatility
+<img src="https://raw.githubusercontent.com/kushagra8403/real-data-analyst-portfolio/main/06-uk-retail-sales/visuals/published_metrics.svg" alt="ONS retail sales published metrics" width="900">
 
-## Reproducibility
+### Open the actual project files
+- [Real-data evidence table](./data/featured_metrics.csv)
+- [Analytical output](./output/summary_metrics.csv)
+- [Python analysis](./src/analyze.py)
+- [Data download script](./src/download_data.py)
+- [Output/visual builder](./src/build_outputs.py)
+- [SQL analysis](./sql/analysis.sql)
+- [Advanced SQL](./sql/advanced_analysis.sql)
+- [Dashboard visual](./visuals/dashboard.svg)
+- [Published-metrics visual](./visuals/published_metrics.svg)
+
+### Source
+[ONS — Retail Sales](https://www.ons.gov.uk/businessindustryandtrade/retailindustry/datasets/retailsales)
+
+### Reproduce
 ```bash
 pip install -r requirements.txt
 python src/download_data.py
 python src/analyze.py
+python src/build_outputs.py
 ```
-
-## Dashboard preview
-
-![Dashboard preview](./visuals/dashboard.svg)
