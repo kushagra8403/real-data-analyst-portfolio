@@ -1,20 +1,10 @@
--- Load data/collisions_2025.csv into SQLite as collisions.
-SELECT accident_severity, COUNT(*) AS collisions
-FROM collisions
-GROUP BY accident_severity
-ORDER BY accident_severity;
+-- Road Safety STATS19: repeatable analysis over the committed published evidence table
+SELECT metric, value, unit, period
+FROM analysis_ready
+ORDER BY metric;
 
-SELECT speed_limit, COUNT(*) AS collisions
-FROM collisions
-GROUP BY speed_limit
-ORDER BY collisions DESC;
-
-SELECT urban_or_rural_area, COUNT(*) AS collisions
-FROM collisions
-GROUP BY urban_or_rural_area
-ORDER BY collisions DESC;
-
-SELECT road_type, COUNT(*) AS collisions
-FROM collisions
-GROUP BY road_type
-ORDER BY collisions DESC;
+-- Numeric KPIs
+SELECT unit, COUNT(*) AS metrics, MIN(value) AS min_value, MAX(value) AS max_value
+FROM analysis_ready
+GROUP BY unit
+ORDER BY unit;
