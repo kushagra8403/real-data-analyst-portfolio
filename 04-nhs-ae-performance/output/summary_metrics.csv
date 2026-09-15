@@ -1,5 +1,5 @@
-period,metric,value
-2026-Jun-Aug,A&E attendances,7268445
-2026-Jun-Aug,Treated/admitted/discharged within 4h,5462182
-2026-Jun-Aug,Ambulance call-outs,2455833
-2026-Jun-Aug,A&E attendances increase vs summer 2025,240000
+metric,value,unit,period,
+A&E attendances,7268445,count,June-August 2026,https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/
+Within-four-hours activity,5462182,count,June-August 2026,https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/
+Ambulance call-outs,2455833,count,June-August 2026,https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/
+YoY attendance increase,240000,count,June-August 2026,https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/
